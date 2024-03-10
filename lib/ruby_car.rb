@@ -3,6 +3,8 @@
 # homework assignment 9 in Professor Malasri's COMP-1900-101 course.
 
 class Car
+    attr_accessor :make_and_model, :car_color, :car_price
+
 
     def initialize(make_and_model, car_color, car_price)
         @make_and_model = make_and_model
@@ -26,7 +28,16 @@ class Car
 
     end
 
-    
+    def show_car_info
+        puts "Car make and model:       #{@make_and_model}"
+        puts "Car color:                #{@car_color}"
+        puts "Car price:               $#{@car_price}"
+        puts "Car's Travelled miliage:  #{@traveled_mileage} Miles"
+    end
 
-
+    def travel(distance)
+        puts "The #{@make_and_model} has travelled #{distance} miles!"
+        @traveled_mileage += distance
+        puts "Its new mileage is #{@traveled_mileage} miles."
+    end
 end
