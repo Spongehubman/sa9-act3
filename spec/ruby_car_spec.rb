@@ -12,12 +12,12 @@ RSpec.describe Car do
         end
     end
 
-    #describe "#paint" do
-    #    it "correctly changes the car's color" do
-    #        fiat.paint('Olive Green')
-    #        expect(fiat.car_color).to eql('Olive Green')
-    #    end
-    #end
+    describe "#paint" do
+        it "correctly changes the car's color" do
+            fiat.paint('Olive Green')
+            expect(fiat.car_color).to eql('Olive Green')
+        end
+    end
 
 
 
