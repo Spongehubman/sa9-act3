@@ -1,3 +1,7 @@
+
+# This file is based on "car.py", a homework Python file I wrote for
+# homework assignment 9 in Professor Malasri's COMP-1900-101 course.
+
 require 'ruby_car'
 
 RSpec.describe Car do
@@ -19,7 +23,16 @@ RSpec.describe Car do
         end
     end
 
+    describe "#show_car_info" do
+        it "successfully prints out the information of the car" do
+            fiat.show_car_info
+        end
+    end
 
-
-
+    describe "#travel" do
+        it "correctly shows how much your car has traveled" do
+            fiat.travel(200)
+            expect(fiat.traveled_mileage).to eq(200)
+        end
+    end
 end

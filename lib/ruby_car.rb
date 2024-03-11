@@ -3,7 +3,7 @@
 # homework assignment 9 in Professor Malasri's COMP-1900-101 course.
 
 class Car
-    attr_accessor :make_and_model, :car_color, :car_price
+    attr_accessor :make_and_model, :car_color, :car_price, :traveled_mileage
 
 
     def initialize(make_and_model, car_color, car_price)
