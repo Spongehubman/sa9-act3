@@ -32,7 +32,7 @@ class Car
         puts "Car make and model:       #{@make_and_model}"
         puts "Car color:                #{@car_color}"
         puts "Car price:               $#{@car_price}"
-        puts "Car's Travelled miliage:  #{@traveled_mileage} Miles"
+        puts "Car's Travelled mileage:  #{@traveled_mileage} Miles"
     end
 
     def travel(distance)
